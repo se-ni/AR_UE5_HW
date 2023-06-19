@@ -26,3 +26,24 @@ void ASnakeHead::Tick(float DeltaTime)
 	// UE_LOG(LogTemp, Warning, TEXT("waring"));
 }
 
+void ASnakeHead::LeftAction()
+{
+	AddActorLocalOffset(FVector::LeftVector);
+}
+
+void ASnakeHead::RightAction()
+{
+	AddActorLocalOffset(FVector::RightVector);
+}
+
+void ASnakeHead::UpAction()
+{
+	AddActorLocalOffset(FVector::UpVector);
+}
+
+void ASnakeHead::DownAction()
+{
+	AddActorLocalOffset(FVector::RightVector);
+}
+
+

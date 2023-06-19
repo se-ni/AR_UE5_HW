@@ -23,4 +23,15 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UFUNCTION(CPF_BlueprintCallable)
+	void LeftAction();
+
+	UFUNCTION(CPF_BlueprintCallable)
+	void RightAction();
+
+	UFUNCTION(CPF_BlueprintCallable)
+	void UpAction();
+
+	UFUNCTION(CPF_BlueprintCallable)
+	void DownAction();
 };
